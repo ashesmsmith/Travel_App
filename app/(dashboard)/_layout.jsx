@@ -1,10 +1,10 @@
 import { Tabs } from 'expo-router'
 import { useColorScheme } from 'react-native'
+import { StatusBar } from 'expo-status-bar'
 import Ionicons from '@expo/vector-icons/Ionicons'
 
 // Custom Layout Components
 import { Colors } from '../../constants/Colors'
-import { StatusBar } from 'expo-status-bar'
 
 const DashboardLayout = () => {
     const colorScheme = useColorScheme()
@@ -49,7 +49,7 @@ const DashboardLayout = () => {
                     options={{ title: 'Saved', tabBarIcon: ({ focused }) => (
                         <Ionicons 
                             size={25}
-                            name={focused ? 'star' : 'star-outline'}
+                            name={focused ? 'bookmark' : 'bookmark-outline'}
                             color={focused ? theme.iconsFocused : theme.icons}
                         />
                     )}} 

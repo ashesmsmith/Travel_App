@@ -23,8 +23,8 @@ const ThemedButton = ({ style, children, ...props} ) => {
 
     const styles = StyleSheet.create({
     btn: {
-        padding: 18,
-        borderRadius: 6,
+        padding: 15,
+        borderRadius: 5,
         marginVertical: 10
     },
     pressed: {

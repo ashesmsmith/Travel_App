@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { StyleSheet, View, TouchableOpacity } from 'react-native'
+import { StyleSheet, View, TouchableOpacity, Text } from 'react-native'
 import DraggableFlatList from 'react-native-draggable-flatlist'
 import Ionicons from '@expo/vector-icons/Ionicons'
 
@@ -10,7 +10,6 @@ import ThemedInput from '../../components/ThemedInput'
 import ThemedButton from '../../components/ThemedButton'
 import Spacer from '../../components/Spacer'
 import { Colors } from '../../constants/Colors'
-import { ScrollView } from 'react-native-gesture-handler'
 
 const Create = () => {
     const [location, setLocation] = useState('')
@@ -27,10 +26,6 @@ const Create = () => {
         setLocations(locations.filter(item => item.id !== id))
     }
 
-    const handleDrag = ({ data }) => {
-        setLocations(data)
-    }
-
     return (
         <ThemedView style={styles.container}>
             <ThemedText style={styles.title} title={true}>
@@ -44,8 +39,8 @@ const Create = () => {
             <Spacer height={10} />
 
             <ThemedInput 
-                style={{ width: '80%', marginBottom: 20 }}
-                placeholder='Boise, ID'
+                style={{ width: '80%', marginBottom: 10 }}
+                placeholder='City, ST'
                 value={location}
                 onChangeText={setLocation}
             />
@@ -70,7 +65,7 @@ const Create = () => {
                             <Ionicons name='menu-outline' size={22} />
                         </TouchableOpacity>
 
-                        <ThemedText style={styles.listText}>{item.name}</ThemedText>
+                        <Text style={styles.listText}>{item.name}</Text>
 
                         <TouchableOpacity onPress={() => handleDelete(item.id)}>
                             <Ionicons name='trash-outline' size={22} color={Colors.warning} />
@@ -106,7 +101,7 @@ const styles = StyleSheet.create({
         flexDirection: 'row',
         alignItems: 'center',
         padding: 10,
-        backgroundColor: Colors.white,
+        backgroundColor: Colors.silver,
         borderRadius: 10,
         margin: 10,
         shadowColor: '#000',

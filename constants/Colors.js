@@ -23,7 +23,7 @@ export const Colors = {
         text: "#CCCCCC",
         icons: "#888581",
         iconsFocused: "#FFFFFF",
-        inputBackground: "#4A4745",
+        inputBackground: "#888581",
         inputText: "#FFFFFF",
         buttonBackground: "#CCCCCC",
         buttonText: "#292827",
