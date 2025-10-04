@@ -26,7 +26,7 @@
 
 - [Map Components API](https://github.com/react-native-maps/react-native-maps/blob/master/docs/mapview.md)
 
--[Expo Icons](https://icons.expo.fyi/Index)
+- [Expo Icons](https://icons.expo.fyi/Index)
 
 # Future Work
 

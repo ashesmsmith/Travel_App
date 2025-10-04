@@ -4,6 +4,7 @@ export const Colors = {
     battle: "#888581",
     silver: "#CCCCCC",
     white: "#FFFFFF",
+    warning: "#7F0000",
 
     light: {
         background: "#FFFFFF",
@@ -11,6 +12,10 @@ export const Colors = {
         text: "#4A4745",
         icons: "#888581",
         iconsFocused: "#292827",
+        inputBackground: "#CCCCCC",
+        inputText: "#292827",
+        buttonBackground: "#4A4745",
+        buttonText: "#FFFFFF",
     },
     dark: {
         background: "#292827",
@@ -18,5 +23,9 @@ export const Colors = {
         text: "#CCCCCC",
         icons: "#888581",
         iconsFocused: "#FFFFFF",
+        inputBackground: "#4A4745",
+        inputText: "#FFFFFF",
+        buttonBackground: "#CCCCCC",
+        buttonText: "#292827",
     },
 }
