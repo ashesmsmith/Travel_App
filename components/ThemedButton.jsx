@@ -1,6 +1,8 @@
+// Imports
 import { Pressable, Text, StyleSheet, useColorScheme } from 'react-native'
 import { Colors } from '../constants/Colors'
 
+// Themed Button Component - Light/Dark Mode - Pressable
 const ThemedButton = ({ style, children, ...props} ) => {
     const colorScheme = useColorScheme()
     const theme = Colors[colorScheme] ?? Colors.light

@@ -1,6 +1,8 @@
+// Imports
 import { useColorScheme, Text } from 'react-native'
 import { Colors } from '../constants/Colors'
 
+// Themed Text Component - Light/Dark Mode
 const ThemedText = ({ style, title = false, ...props} ) => {
     const colorScheme = useColorScheme()
     const theme = Colors[colorScheme] ?? Colors.light

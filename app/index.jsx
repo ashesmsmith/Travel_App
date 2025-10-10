@@ -1,13 +1,15 @@
+// Imports
 import { StyleSheet } from 'react-native'
 import { Link } from 'expo-router'
 
-// Custom Layout Components
+// Custom Layout Components & Colors
 import ThemedView from '../components/ThemedView'
 import ThemedLogo from '../components/ThemedLogo'
 import ThemedText from '../components/ThemedText'
 import Spacer from '../components/Spacer'
 import { Colors } from '../constants/Colors'
 
+// Home Screen
 const Home = () => {
     return (
         <ThemedView style={styles.container}>
@@ -28,6 +30,7 @@ const Home = () => {
 
 export default Home
 
+// Page Specific Styles
 const styles = StyleSheet.create({
     container: {
         flex: 1,

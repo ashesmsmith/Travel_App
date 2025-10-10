@@ -1,6 +1,8 @@
+// Imports
 import { useColorScheme, TextInput } from 'react-native'
 import { Colors } from '../constants/Colors'
 
+// Themed Input Component - Light/Dark Mode
 const ThemedInput = ({ style, ...props} ) => {
     const colorScheme = useColorScheme()
     const theme = Colors[colorScheme] ?? Colors.light

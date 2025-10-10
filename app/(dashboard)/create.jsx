@@ -1,9 +1,10 @@
+// Imports
 import { useState } from 'react'
 import { StyleSheet, View, TouchableOpacity, Text } from 'react-native'
 import DraggableFlatList from 'react-native-draggable-flatlist'
 import Ionicons from '@expo/vector-icons/Ionicons'
 
-// Custom Layout Components
+// Custom Layout Components & Colors
 import ThemedView from '../../components/ThemedView'
 import ThemedText from '../../components/ThemedText'
 import ThemedInput from '../../components/ThemedInput'
@@ -11,10 +12,12 @@ import ThemedButton from '../../components/ThemedButton'
 import Spacer from '../../components/Spacer'
 import { Colors } from '../../constants/Colors'
 
+// Create Screen
 const Create = () => {
     const [location, setLocation] = useState('')
     const [locations, setLocations] = useState([])
 
+    // Add Location Functionality
     const handleSubmit = () => {
         if (location.trim() === '') return //Skip if empty
         const newLocation = { id: Date.now().toString(), name: location.trim() }
@@ -22,6 +25,7 @@ const Create = () => {
         setLocation('') // Clear Input
     }
 
+    // Delete Location Functionality
     const handleDelete = (id) => {
         setLocations(locations.filter(item => item.id !== id))
     }
@@ -82,6 +86,7 @@ const Create = () => {
 
 export default Create
 
+// Page Specific Styles
 const styles = StyleSheet.create({
     container: {
         flex: 1,

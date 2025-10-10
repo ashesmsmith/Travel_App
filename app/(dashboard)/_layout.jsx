@@ -1,11 +1,13 @@
+// Imports
 import { Tabs } from 'expo-router'
 import { useColorScheme } from 'react-native'
 import { StatusBar } from 'expo-status-bar'
 import Ionicons from '@expo/vector-icons/Ionicons'
 
-// Custom Layout Components
+// Custom Layout Components & Colors
 import { Colors } from '../../constants/Colors'
 
+// Dashboard Pages Layout
 const DashboardLayout = () => {
     const colorScheme = useColorScheme()
     const theme = Colors[colorScheme] ?? Colors.light
@@ -24,6 +26,7 @@ const DashboardLayout = () => {
                     tabBarInactiveTintColor: theme.icons
                 }}
             >
+                {/* Add styled tabs to bottom of screen for navigation */}
                 <Tabs.Screen 
                     name='map' 
                     options={{ title: 'Map', tabBarIcon: ({ focused }) => (
