@@ -2,12 +2,15 @@
 
 The purpose of this program is to practice taking an existing JavaScript program and converting it into a mobile app.
 
-[Software Demo Video](http://youtube.link.goes.here)
+The Travel_App uses React Native Maps to display a map with the default location of Boise, ID. The map is interactive so the user can zoom in and out, and move the location view.
+
+[Software Demo Video](https://youtu.be/Q0vJQKsjWd8)
 
 # Development Environment
 
 Visual Studio Code
 
+JavaScript
 React Native
 React Native Maps
 Expo Go
@@ -26,6 +29,8 @@ Expo Go
 
 # Future Work
 
-- Add the ability to create routes using the location input provided
-- Add the ability to save routes to be viewed again
-- Add login information to enable cloud backup of routes that can be accessed on different devices
+- Add functionality for user entered locations to be geocoded and saved as start, end, and waypoints for routing purposes
+
+- Add functionality for routes to be displayed on map and step by step directions shown to user
+
+- Add login functionality to enable cloud backup of routes that can be accessed on different devices
